@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe "users/edit", :type => :view do
   before do
-  	@address = Address.new(street: 'street 1', city: 'New York', house_nr: "21")
+    @address = Address.new(street: 'street 1', city: 'New York', house_nr: "21")
     assign(:user, FactoryBot.create(:user, address: @address))
     render
   end
